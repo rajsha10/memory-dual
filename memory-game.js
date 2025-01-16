@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
     resetScoresButton.addEventListener("click", () => {
         if (confirm("Are you sure you want to reset the scoreboard? This action cannot be undone.")) {
             localStorage.removeItem("scores");
-            scores.length = 0; // Clear the scores array
-            updateScoreboard(); // Update the scoreboard display
+            scores.length = 0;
+            updateScoreboard();
             alert("Scoreboard has been reset!");
         }
     });
